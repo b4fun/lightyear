@@ -85,6 +85,7 @@
     "grunt-contrib-compress": "~1.4.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-cssnano": "^2.0.1",
-    "grunt-sass": "^2.0.0"
+    "grunt-sass": "^2.0.0",
+    "lodash": "^4.17.10"
   }
 }
