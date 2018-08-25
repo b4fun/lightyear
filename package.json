@@ -3,7 +3,8 @@
   "version": "2.10.7",
   "description": "Solid CSS Styling (forked from bf-solid)",
   "scripts": {
-    "prepublish": "grunt dist"
+    "prepublish": "grunt dist",
+    "dev": "grunt dev"
   },
   "repository": {
     "type": "git",
@@ -80,7 +81,9 @@
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-compress": "~1.4.1",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-cssnano": "^2.0.1",
     "grunt-sass": "^2.0.0",
     "lodash": "^4.17.10"

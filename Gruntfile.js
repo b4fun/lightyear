@@ -67,16 +67,44 @@ module.exports = function(grunt) {
     clean: [
       'dist/',
       '.tmp/'
-    ]
+    ],
+    connect: {
+      dev_server: {
+        options: {
+          port: 8888,
+          livereload: true,
+          base: '.',
+          directory: 'example',
+        },
+      },
+    },
+    watch: {
+      css: {
+        files: '_lib/**/*.scss',
+        tasks: ['dev_solid'],
+        options: {
+          livereload: true,
+        },
+      },
+      example: {
+        files: 'example/**/*',
+        options: {
+          livereload: true,
+        },
+      },
+    },
   });
 
-grunt.loadNpmTasks('grunt-sass');
-grunt.loadNpmTasks('grunt-cssnano');
-grunt.loadNpmTasks('grunt-contrib-compress');
-grunt.loadNpmTasks('grunt-contrib-clean');
-grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-cssnano');
+  grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-grunt.registerTask('prepare_solid_dist', ['sass:lib', 'cssnano:lib', 'copy:latest', 'compress:lib']);
-grunt.registerTask('dist', ['clean', 'prepare_solid_dist']);
-
+  grunt.registerTask('prepare_solid_dist', ['sass:lib', 'cssnano:lib', 'copy:latest', 'compress:lib']);
+  grunt.registerTask('dist', ['clean', 'prepare_solid_dist']);
+  grunt.registerTask('dev_solid', ['sass:lib', 'copy:latest']);
+  grunt.registerTask('dev', ['connect:dev_server', 'watch']);
 }
