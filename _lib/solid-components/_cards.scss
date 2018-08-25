@@ -8,3 +8,39 @@
   background-color: $fill-white;
   border-radius: $border-radius;
 }
+
+.card-hero {
+  &__body {
+    margin: 1rem;
+    color: #222;
+
+    @include media-query(sm) {
+      margin: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__headline {
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    color: #222;
+
+    @include media-query(sm) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__caption {
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    line-height: 1.3;
+
+    @include media-query(sm) {
+      line-height: 1.2;
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
