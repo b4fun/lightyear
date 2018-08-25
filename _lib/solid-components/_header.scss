@@ -1,0 +1,72 @@
+//
+// Headers
+// --------------------------------------------------
+
+.header {
+  background-color: $fill-white;
+  box-shadow: 0 1px 1px rgba(173, 168, 168, .1);
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 71rem;
+  min-height: 3.75rem;
+}
+
+.header__content {
+  @include media-query(md) {
+    padding: .5rem 1rem;
+  }
+
+  @include media-query(sm) {
+    padding: .5rem .5rem .5rem 1rem;
+  }
+}
+
+.header__nav {
+  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 14px;
+
+  @include media-query(sm) {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    font-size: 1rem;
+  }
+}
+
+.header__nav-link {
+  padding-left: 1.5rem !important;
+}
+
+.header__stacked {
+  background-color: #f9f9f9;
+
+  @include media-query(sm) {
+    background-color: $fill-white;
+  }
+}
+
+.header__logo {
+  height: 2rem;
+  padding-left: 1rem;
+  flex-grow: 1;
+
+  @include media-query(sm) {
+    padding: 0;
+    flex-grow: inherit;
+  }
+
+  img {
+    position: relative;
+    top: 5px;
+    height: 1.5rem;
+  }
+}
