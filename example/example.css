@@ -1,3 +1,8 @@
 .page-content {
   max-width: 71rem;
 }
+
+.sidebar__list--purple {
+  border-top: 8px solid #6645dd;
+  color: #6645dd;
+}
