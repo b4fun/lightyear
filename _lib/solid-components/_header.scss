@@ -5,6 +5,11 @@
 .header {
   background-color: $fill-white;
   box-shadow: 0 1px 1px rgba(173, 168, 168, .1);
+  margin-bottom: .5rem;
+
+  @include media-query(sm) {
+    margin-bottom: 0;
+  }
 }
 
 .header__content {
