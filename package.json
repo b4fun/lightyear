@@ -1,20 +1,17 @@
 {
-  "name": "bf-solid",
+  "name": "@b4fun/lightyear",
   "version": "2.10.7",
-  "description": "Solid CSS Styling",
+  "description": "Solid CSS Styling (forked from bf-solid)",
   "scripts": {
     "prepublish": "grunt dist"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/buzzfeed/solid.git"
+    "url": "https://github.com/b4fun/lightyear.git"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/buzzfeed/solid/issues"
-  },
-  "homepage": "https://github.com/buzzfeed/solid",
+  "license": "MIT",
+  "homepage": "https://github.com/b4fun/lightyear",
   "contributors": [
     {
       "name": "Emily Brick",
