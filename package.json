@@ -1,6 +1,6 @@
 {
   "name": "@b4fun/lightyear",
-  "version": "2.10.7",
+  "version": "3.0.0",
   "description": "Solid CSS Styling (forked from bf-solid)",
   "scripts": {
     "prepublish": "grunt dist",
